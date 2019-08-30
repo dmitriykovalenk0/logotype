@@ -7,11 +7,11 @@
 
 /* Default styles */
 body {
-    font-family: 'PT Serif', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: $white;
+    color: black;
 
     margin: 0;
     padding: 0;
@@ -45,3 +45,6 @@ li {
 // Blocks
 @import "blocks/header";
 @import "blocks/modal";
+@import "blocks/slider";
+@import "blocks/slick";
+@import "blocks/services";

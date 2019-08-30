@@ -1,0 +1,52 @@
+.slick-btn {
+    position: absolute;
+    top: 75%;
+    z-index: 3;
+
+    width: 40px;
+    height: 40px;
+    border: 1px solid $white;
+    cursor: pointer;
+
+    font-family: 'icomoon';
+    color: $white;
+    background-color: $yellow;
+
+    &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $yellow;
+    }
+
+    &.slick-disabled {
+        cursor: default;
+        background-color: transparent;
+    }
+
+}
+
+
+.slick-next {
+    right: 0;
+
+    &:before {
+        content: "\f105";
+    }
+}
+
+.slick-prev {
+    left: 0;
+
+    &:before {
+        content: "\f104";
+    }
+}

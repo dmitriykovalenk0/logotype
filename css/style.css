@@ -5,11 +5,11 @@
 
 /* Default styles */
 body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
+  color: black;
   margin: 0;
   padding: 0;
 }
@@ -144,5 +144,225 @@ li {
 .modal {
   display: none;
   color: black;
+}
+
+.slider {
+  background: url("../../img/slider-1.png") no-repeat center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.slider__item--content {
+  text-align: center;
+  padding-top: 130px;
+  max-width: 665px;
+  margin: 0 auto;
+}
+
+.slider__title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+.slider__text {
+  color: #d3d2d2;
+  font-family: "PT Serif", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+.default__btn {
+  color: #373636;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 8px 30px 8px 24px;
+  border: 1px solid #ffc222;
+  border-right-width: 20px;
+  outline: none;
+  position: relative;
+}
+
+.default__btn:after {
+  content: "\f105";
+  font-family: 'icomoon';
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -12px;
+}
+
+.slider__btn {
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 8px 30px 8px 24px;
+  border: 1px solid #ffc222;
+  border-right-width: 20px;
+}
+
+.slider__inner {
+  position: relative;
+}
+
+.slick-btn {
+  position: absolute;
+  top: 75%;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-family: 'icomoon';
+  color: #ffffff;
+  background-color: #ffc222;
+}
+
+.slick-btn:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.slick-btn:focus {
+  outline: none;
+}
+
+.slick-btn:hover {
+  background-color: #ffc222;
+}
+
+.slick-btn.slick-disabled {
+  cursor: default;
+  background-color: transparent;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-next:before {
+  content: "\f105";
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-prev:before {
+  content: "\f104";
+}
+
+.services {
+  padding: 50px 0 30px;
+}
+
+.services__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.services__title--box {
+  max-width: 520px;
+  padding-left: 140px;
+  position: relative;
+}
+
+.services__title--box:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 100px;
+  height: 2px;
+  background-color: #ffc222;
+}
+
+.services__title {
+  color: #212020;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  margin-bottom: 10px;
+}
+
+.services__text {
+  color: #5e5e5e;
+  font-family: "PT Serif";
+  line-height: 18px;
+}
+
+.services__btn {
+  margin-top: 25px;
+}
+
+.services__btn--link {
+  color: #373636;
+  line-height: 24px;
+  letter-spacing: 0.35px;
+  border: 3px solid #e6e6e6;
+  padding: 5px 38px;
+}
+
+.services__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__item {
+  padding: 30px 0 80px;
+  max-width: 360px;
+  min-height: 375px;
+  text-align: center;
+  -webkit-box-shadow: 0 7px 24px 3px rgba(91, 89, 89, 0.14);
+          box-shadow: 0 7px 24px 3px rgba(91, 89, 89, 0.14);
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.services__item--title {
+  padding: 24px 0;
+  color: #212020;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.services__item--text {
+  color: #5e5e5e;
+  font-family: "PT Serif";
+  letter-spacing: 0.14px;
+  padding: 0 30px 30px;
+}
+
+.services__item--btns {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+}
+
+.services__item--link {
+  color: #050505;
+  border-bottom: 1px solid #050505;
+  margin-right: 65px;
 }
 /*# sourceMappingURL=style.css.map */
