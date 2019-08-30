@@ -5,11 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LogoType</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <title>LogoType</title>
 </head>
 
 <body>
+
+    <svg style="display: none;">
+
+        <symbol id="phone" viewBox="0 0 348.077 348.077">
+            <g>
+                <path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076
+                                    c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257
+                                    c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194
+                                    C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02
+                                    C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876
+                                    c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029
+                                    C350.631,303.527,350.95,285.795,340.273,275.083z" />
+            </g>
+        </symbol>
+
+        <symbol id="email" viewBox="0 0 382.117 382.117">
+            <g>
+                <path d="M336.764,45.945H45.354C20.346,45.945,0,65.484,0,89.5v203.117c0,24.016,20.346,43.555,45.354,43.555h291.41
+                            c25.008,0,45.353-19.539,45.353-43.555V89.5C382.117,65.484,361.772,45.945,336.764,45.945z M336.764,297.72H45.354
+                            c-3.676,0-6.9-2.384-6.9-5.103V116.359l131.797,111.27c2.702,2.282,6.138,3.538,9.676,3.538l22.259,0.001
+                            c3.536,0,6.974-1.257,9.677-3.539l131.803-111.274v176.264C343.664,295.336,340.439,297.72,336.764,297.72z M191.059,192.987
+                            L62.87,84.397h256.378L191.059,192.987z" />
+            </g>
+        </symbol>
+
+        <symbol id="case" viewBox="0 0 511.626 511.627">
+            <g>
+                <path
+                    d="M18.842,128.48C6.28,141.043,0,156.08,0,173.588v237.537c0,17.515,6.28,32.552,18.842,45.111
+                                    c12.563,12.565,27.6,18.842,45.111,18.842h18.271V109.634H63.953C46.438,109.634,31.402,115.917,18.842,128.48z" />
+                <path d="M365.446,63.955c0-7.614-2.663-14.084-7.994-19.414c-5.325-5.33-11.8-7.993-19.411-7.993H173.589
+                                    c-7.612,0-14.083,2.663-19.414,7.993c-5.33,5.327-7.994,11.799-7.994,19.414v45.679h-36.545v365.444h292.359V109.634h-36.549
+                                    V63.955z M328.904,109.634H182.725V73.091h146.179V109.634z" />
+                <path
+                    d="M492.785,128.48c-12.563-12.562-27.601-18.846-45.111-18.846h-18.274v365.444h18.274c17.511,0,32.548-6.276,45.111-18.842
+                                    c12.559-12.56,18.842-27.597,18.842-45.111V173.588C511.626,156.08,505.343,141.043,492.785,128.48z" />
+            </g>
+        </symbol>
+
+    </svg>
+
+
+    <header class="header">
+
+        <div class="header__top">
+            <div class="container">
+                <div class="header__contacts">
+
+
+                    <div class="header__phone">
+                        <svg class="header__phone--icon">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        <a href="tel:+380963092145" class="header__phone--link">
+                            +38 (096) 309 21 45
+                        </a>
+                    </div>
+
+
+
+                    <div class="header__email">
+                        <svg class="header__email--icon">
+                            <use xlink:href="#email"></use>
+                        </svg>
+                        <a href="#" class="header__email--link">
+                            layout585@gmail.com
+                        </a>
+                    </div>
+
+
+                    <div class="header__btn">
+                        <svg class="header__btn--icon">
+                            <use xlink:href="#case"></use>
+                        </svg>
+                        <a href="#" class="header__btn--link" data-fancybox data-src="#modal" href="javascript:;">
+                            Бесплатная консультация
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content--inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="header__nav">
+                        <ul>
+                            <li class="header__nav--list">
+                                <a class="header__nav--item" href="#">Главная</a>
+                            </li>
+                            <li class="header__nav--list">
+                                <a class="header__nav--item" href="#">О компании</a>
+                            </li>
+                            <li class="header__nav--list">
+                                <a class="header__nav--item" href="#">Услуги</a>
+                            </li>
+                            <li class="header__nav--list">
+                                <a class="header__nav--item" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <h2>Hello!</h2>
+        <p>You are awesome!</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
