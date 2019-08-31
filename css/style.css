@@ -561,4 +561,64 @@ li {
 .form__box--btn:after {
   color: #282828;
 }
+
+.advantages {
+  padding: 55px 0 40px;
+  background: url("../../img/adv-img.png") no-repeat center;
+  background-size: cover;
+  min-height: 285px;
+}
+
+.advantages__inner {
+  text-align: center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages__title {
+  position: relative;
+  padding: 60px 0 15px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.advantages__title:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffc222;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.advantages__title:after {
+  content: "\f00c";
+  font-family: "icomoon";
+  font-size: 14px;
+  position: absolute;
+  top: 9px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.advantages__item {
+  max-width: 360px;
+}
+
+.advantages__text {
+  color: #d3d2d2;
+  font-family: "PT Serif";
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
 /*# sourceMappingURL=style.css.map */
