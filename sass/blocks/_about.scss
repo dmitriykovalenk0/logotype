@@ -1,0 +1,35 @@
+.about {
+    background: url("../../img/about.png") center no-repeat;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 540px;
+    min-height: 300px;
+}
+
+.about__title {
+    color: $white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.about__text {
+    color: #d3d2d2;
+    font-family: "PT Serif";
+    line-height: 24px;
+    letter-spacing: 0.14px;
+}
+
+.about__btn {
+    color: $white;
+
+    &:after {
+        color: #303030;
+    }
+}

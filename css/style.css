@@ -275,13 +275,15 @@ li {
   margin-bottom: 60px;
 }
 
-.services__title--box {
+.services__title--box,
+.form__title--box {
   max-width: 520px;
   padding-left: 140px;
   position: relative;
 }
 
-.services__title--box:before {
+.services__title--box:before,
+.form__title--box:before {
   content: '';
   position: absolute;
   left: 0;
@@ -291,7 +293,8 @@ li {
   background-color: #ffc222;
 }
 
-.services__title {
+.services__title,
+.form__title {
   color: #212020;
   font-size: 24px;
   font-weight: 500;
@@ -300,7 +303,8 @@ li {
   margin-bottom: 10px;
 }
 
-.services__text {
+.services__text,
+.form__text {
   color: #5e5e5e;
   font-family: "PT Serif";
   line-height: 18px;
@@ -364,5 +368,197 @@ li {
   color: #050505;
   border-bottom: 1px solid #050505;
   margin-right: 65px;
+}
+
+.about {
+  background: url("../../img/about.png") center no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 540px;
+  min-height: 300px;
+}
+
+.about__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.about__text {
+  color: #d3d2d2;
+  font-family: "PT Serif";
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+
+.about__btn {
+  color: #ffffff;
+}
+
+.about__btn:after {
+  color: #303030;
+}
+
+.form {
+  padding-top: 30px;
+}
+
+.form__inner {
+  padding-bottom: 40px;
+  background: url("../../img/form-img.png") no-repeat bottom right;
+  min-height: 460px;
+}
+
+.form__box {
+  max-width: 850px;
+  padding-top: 45px;
+}
+
+.form__box--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__box--left {
+  max-width: 260px;
+  width: 100%;
+}
+
+.form__box--right {
+  max-width: 555px;
+  width: 100%;
+}
+
+.form__box--inner label,
+.form__box--inner input,
+.form__box--inner textarea {
+  display: block;
+  width: 100%;
+}
+
+.form__box--inner label {
+  color: #282828;
+  line-height: 36px;
+}
+
+.form__box--inner input {
+  margin-bottom: 8px;
+  padding: 0 10px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+}
+
+.form__box--inner select {
+  padding-left: 17px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.form__box--inner .jq-selectbox.jqselect {
+  display: block;
+  width: 100%;
+}
+
+.form__box--inner .jq-selectbox__select {
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding-left: 17px;
+}
+
+.form__box--inner .jq-selectbox__trigger-arrow:before {
+  content: "\f105";
+  font-family: 'icomoon';
+  color: #6b6a6a;
+  position: absolute;
+  right: 17px;
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.jq-selectbox__dropdown {
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 0;
+  border: 1px solid #e6e6e6;
+  background: #FFF;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form__box--inner .jq-selectbox li {
+  min-height: 18px;
+  padding: 5px 17px 6px;
+  color: #231F20;
+}
+
+.form__box--inner .jq-selectbox li.selected {
+  background-color: #A3ABB1;
+  color: #FFF;
+}
+
+.form__box--inner .jq-selectbox li:hover {
+  background-color: #08C;
+  color: #FFF;
+}
+
+.form__box--inner .jq-selectbox li.disabled {
+  color: #AAA;
+}
+
+.form__box--inner .jq-selectbox li.disabled:hover {
+  background: none;
+}
+
+.form__box--inner .jq-selectbox li.optgroup {
+  font-weight: bold;
+}
+
+.form__box--inner .jq-selectbox li.optgroup:hover {
+  background: none;
+  color: #231F20;
+  cursor: default;
+}
+
+.form__box--inner .jq-selectbox li.option {
+  padding-left: 25px;
+}
+
+.form__box--inner textarea {
+  padding: 10px;
+  margin-bottom: 44px;
+  height: 207px;
+  outline: none;
+  resize: none;
+  border: 1px solid #e6e6e6;
+}
+
+.form__box--btn {
+  background-color: transparent;
+  color: #282828;
+  float: right;
+}
+
+.form__box--btn:after {
+  color: #282828;
 }
 /*# sourceMappingURL=style.css.map */

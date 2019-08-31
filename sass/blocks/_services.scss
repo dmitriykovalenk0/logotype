@@ -9,7 +9,8 @@
     margin-bottom: 60px;
 }
 
-.services__title--box {
+.services__title--box,
+.form__title--box {
     max-width: 520px;
     padding-left: 140px;
 
@@ -28,7 +29,8 @@
     }
 }
 
-.services__title {
+.services__title,
+.form__title {
     color: #212020;
     font-size: 24px;
     font-weight: 500;
@@ -38,7 +40,8 @@
     margin-bottom: 10px;
 }
 
-.services__text {
+.services__text,
+.form__text {
     color: #5e5e5e;
     font-family: "PT Serif";
     line-height: 18px;
