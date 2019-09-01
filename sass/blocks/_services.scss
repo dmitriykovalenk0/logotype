@@ -2,7 +2,8 @@
     padding: 50px 0 30px;
 }
 
-.services__top {
+.services__top,
+.news__top {
     display: flex;
     justify-content: space-between;
 
@@ -10,7 +11,8 @@
 }
 
 .services__title--box,
-.form__title--box {
+.form__title--box,
+.news__title--box {
     max-width: 520px;
     padding-left: 140px;
 
@@ -30,7 +32,8 @@
 }
 
 .services__title,
-.form__title {
+.form__title,
+.news__title {
     color: #212020;
     font-size: 24px;
     font-weight: 500;
@@ -41,17 +44,20 @@
 }
 
 .services__text,
-.form__text {
+.form__text,
+.news__text {
     color: #5e5e5e;
     font-family: "PT Serif";
     line-height: 18px;
 }
 
-.services__btn {
+.services__btn,
+.news__btn {
     margin-top: 25px;
 }
 
-.services__btn--link {
+.services__btn--link,
+.news__btn--link {
     color: #373636;
     line-height: 24px;
     letter-spacing: 0.35px;

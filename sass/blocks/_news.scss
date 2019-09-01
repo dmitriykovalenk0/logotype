@@ -1,0 +1,126 @@
+.news {
+    padding: 55px 0 110px;
+
+    background-color: #f9f9f9;
+}
+
+.news__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__slider {
+    max-width: 555px;
+    width: 100%;
+
+    position: relative;
+
+    padding: 60px 35px 45px 70px;
+
+    background-color: $white;
+    box-shadow: 0 5px 15px 1px rgba(128, 127, 127, 0.13);
+
+    &:before {
+        content: "\f10e";
+        font-family: 'icomoon';
+
+        position: absolute;
+        top: 0;
+        left: 70px;
+
+        width: 65px;
+        height: 30px;
+
+        background-color: #ffc222;
+        font-size: 16px;
+        color: #fff;
+        letter-spacing: 0.8px;
+
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+.news__slider--title {
+    color: #242424;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.9px;
+
+    margin-bottom: 15px;
+}
+
+.news__slider--text {
+    color: #5e5e5e;
+    font-family: "PT Serif";
+    letter-spacing: 0.14px;
+
+    margin-bottom: 30px;
+}
+
+.news__slider--author {
+    color: #212020;
+    letter-spacing: 0.14px;
+}
+
+.news__blog {
+    max-width: 260px;
+    width: 100%;
+}
+
+.news__img {
+    position: relative;
+}
+
+.news__date {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    text-align: center;
+    padding-top: 30px;
+
+    background-color: $yellow;
+    color: #f9f9f9;
+    font-family: "PT Serif";
+    font-weight: 700;
+
+    width: 50px;
+    height: 55px;
+}
+
+.news__blog--title {
+    color: #242424;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+
+    padding: 12px 0;
+}
+
+.news__blog--text {
+    color: #5e5e5e;
+    font-family: "PT Serif";
+    letter-spacing: 0.14px;
+}
+
+.news__slider--inner .slick-btn {
+    top: auto;
+    bottom: -120px;
+}
+
+.news__slider--inner .slick-next {
+    right: -35px;
+}
+
+.news__slider--inner .slick-prev {
+    right: 20px;
+    left: auto;
+}
+
+.news__slider--inner .slick-disabled {
+    border-color: #dadada;
+
+    &:before {
+        color: #dadada;
+    }
+}
